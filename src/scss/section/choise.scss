@@ -1,0 +1,42 @@
+.choise-top-bg {
+  position: relative;
+  height: 500px;
+  background-color: #070716;
+  color: $white;
+
+  @include large-phone {
+    height: auto;
+  }
+}
+.choise__text {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.choise-bottom-bg {
+  min-height: 200px;
+  background: url('../img/facilities-bg.png') no-repeat center/cover;
+
+  @include tablets {
+    min-height: 60px;
+  }
+}
+.choise__block {
+  @include large-phone {
+    margin-top: 100px;
+  }
+}
+.choise__img {
+  text-align: center;
+
+  @include large-phone {
+    display: none;
+  }
+}
+.choise__desc {
+  margin-top: 250px;
+  text-align: center;
+
+  @include large-phone {
+    margin-top: 30px;
+  }
+}

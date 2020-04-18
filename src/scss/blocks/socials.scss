@@ -1,0 +1,66 @@
+.socials {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include large-phone {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+.socials__item {
+  margin-right: 5px;
+
+  @include tablets {
+    margin-right: 10px;
+  }
+}
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #070716;
+
+  &--fb::before {
+    content: "";
+    display: block;
+    background-image: url('../img/iconsSprite/sprite.png');
+    background-position: -44px 0px;
+    width: 9px;
+    height: 18px;
+  }
+
+  &--tw::before {
+    content: "";
+    display: block;
+    background-image: url(../img/iconsSprite/sprite.png);
+    background-position: 0px 0px;
+    width: 20px;
+    height: 15px;
+  }
+
+  &--in::before {
+    content: "";
+    display: block;
+    background-image: url(../img/iconsSprite/sprite.png);
+    background-position: 0px -20px;
+    width: 14px;
+    height: 14px;
+  }
+
+  &--inst::before {
+    content: "";
+    display: block;
+    background-image: url(../img/iconsSprite/sprite.png);
+    background-position: -25px 0px;
+    width: 14px;
+    height: 15px;
+  }
+}
+.socials__link-text {
+  color: $white;
+}

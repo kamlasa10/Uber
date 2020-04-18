@@ -1,0 +1,9 @@
+@import "setting/normalize";
+//variables
+@import "setting/mixin";
+@import "setting/variables";
+@import "setting/basic";
+
+@import "blocks/*.scss";
+@import "section/*.scss";
+//plugin
