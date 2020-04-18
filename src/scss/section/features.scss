@@ -31,7 +31,8 @@
   }
 
   @include large-phone {
-    align-items: flex-start;
+    text-align: center;
+    display: block;
   }
 }
 
@@ -44,10 +45,19 @@
   margin-right: 25px;
   background-color: $lightBlue;
   border-radius: 50%;
+
+  @include large-phone {
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
 }
 
 .features__content {
   width: 341px;
+
+  @include large-phone {
+    width: 100%;
+  }
 }
 
 .features__heading {

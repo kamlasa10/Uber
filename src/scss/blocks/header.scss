@@ -21,11 +21,6 @@
   @media (max-width: 920px) {
     padding: 0;
   }
-
-  @media (max-width: 650px) {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 .header__contact {
   display: flex;
@@ -35,12 +30,17 @@
   @media (max-width: 910px) {
     margin-top: 20px;
   }
+
+  @media (max-width: 650px) {
+    display: block;
+  }
 }
 .header__contact-wrap {
   margin-right: 32px;
 
   @include large-phone {
     margin-right: 5px;
+    margin-bottom: 10px;
   }
 }
 .header__contact-text {

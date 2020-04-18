@@ -27,10 +27,6 @@
 }
 .choise__img {
   text-align: center;
-
-  @include large-phone {
-    display: none;
-  }
 }
 .choise__desc {
   margin-top: 250px;
